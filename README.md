@@ -30,18 +30,16 @@ I am currently focusing on developing Restful API's with the best design pattern
 ![Aws](https://img.shields.io/badge/AWS-232F7E?style=flat-square&logo=amazon)
 
 <br>
- <div>
+ <div align="center">
+
   <a href="https://github.com/kleberbarilli">
    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kleberbarilli&layout=compact&langs_count=7&theme=dracula"/>
    <!--
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=kleberbarilli&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/> -->
-
+  
   [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleberbarilli&theme=dracula)](https://git.io/streak-stats)
- 
-</div>
-<br>
- 
- #### My Social Networks
+ <br>
+  #### My Social Networks
 <div> 
     <a href="https://br.linkedin.com/in/kleber-barilli" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
   <a href = "mailto:kleber.barilli73@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
@@ -50,3 +48,8 @@ I am currently focusing on developing Restful API's with the best design pattern
   ![Snake animation](https://github.com/kleberbarilli/kleberbarilli/blob/output/github-contribution-grid-snake.svg)
  
 </div>
+
+</div>
+
+ 
+
