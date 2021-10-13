@@ -56,7 +56,7 @@ I am currently focusing on developing Restful API's with the best design pattern
 
 <br>
 
->     “It is failure that guides evolution; perfection provides no incentive for improvement, and nothing is perfect.” - Colson Whitehead 
+     “It is failure that guides evolution; perfection provides no incentive for improvement, and nothing is perfect.” - Colson Whitehead 
 <br>
 
 ![](https://media1.giphy.com/media/5wWf7GR2nhgamhRnEuA/giphy.gif?cid=790b7611331251b552f45ad4f4e6a01398884487a0204a4a&rid=giphy.gif&ct=g)
