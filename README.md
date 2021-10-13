@@ -19,6 +19,7 @@ I am currently focusing on developing Restful API's with the best design pattern
 ![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
 ![Python](https://img.shields.io/badge/-Python-FFD13D?style=flat-square&logo=python)
 ![Jupyter](https://img.shields.io/badge/-Jupyter-FFF?style=flat-square&logo=jupyter)
+![Java](https://img.shields.io/badge/-Java-000?style=&logo=java)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-fff?style=flat-square&logo=postgresql)
 ![Mysql](https://img.shields.io/badge/-MySQL-E58E00?style=flat-square&logo=mysql)
@@ -39,15 +40,35 @@ I am currently focusing on developing Restful API's with the best design pattern
   
   [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleberbarilli&theme=dracula)](https://git.io/streak-stats)
  <br>
+
+  ![Snake animation](https://github.com/kleberbarilli/kleberbarilli/blob/output/github-contribution-grid-snake.svg)
+
+</div>
+
+
+### Next technologies I will study
+
+- NestJS
+- Prisma
+- GraphQL
+- RabbitMQ
+- MongoDB
+
+<br>
+
+>     “It is failure that guides evolution; perfection provides no incentive for improvement, and nothing is perfect.” - Colson Whitehead 
+<br>
+
+![](https://media1.giphy.com/media/5wWf7GR2nhgamhRnEuA/giphy.gif?cid=790b7611331251b552f45ad4f4e6a01398884487a0204a4a&rid=giphy.gif&ct=g)
+
+<br>
+
   #### My Social Networks
 <div> 
     <a href="https://br.linkedin.com/in/kleber-barilli" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
   <a href = "mailto:kleber.barilli73@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://www.instagram.com/kleber_92/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
  
-  ![Snake animation](https://github.com/kleberbarilli/kleberbarilli/blob/output/github-contribution-grid-snake.svg)
- 
-</div>
 
 </div>
 
