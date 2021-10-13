@@ -63,7 +63,7 @@ I am currently focusing on developing Restful API's with the best design pattern
 
 <br>
 
-  #### My Social Networks
+  #### My Networks
 <div> 
     <a href="https://br.linkedin.com/in/kleber-barilli" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
   <a href = "mailto:kleber.barilli73@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
