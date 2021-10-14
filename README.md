@@ -4,6 +4,8 @@ I have some professional experiences with Python🐍 (datascience and scraping) 
 
 I am currently focusing on developing Restful API's with the best design patterns to develop my skills.
 
+Check my texts on https://medium.com/@kleber.barilli73 📕
+
 <br>
 
 ### Languages I have studied/worked
