@@ -47,16 +47,6 @@ Check my texts on https://medium.com/@kleber.barilli73 📕
 
 </div>
 
-
-### Next technologies I will study
-
-- NestJS
-- Prisma
-- GraphQL
-- RabbitMQ
-- MongoDB
-
-<br>
  
   "It is failure that guides evolution; perfection provides no incentive for improvement, and nothing is perfect." - Colson Whitehead 
 
