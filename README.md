@@ -1,6 +1,6 @@
 ## Hello there 🙏💯
 I am a brazilian 🇧🇷 developer who is currently studying **JavaScript** and its surroundings.
-I have some professional experiences with Python🐍 (datascience and scraping) and ReactJS/AngularJS☢ <br>
+I have some professional experiences with Java, Python🐍 (datascience and scraping) and ReactJS/AngularJS☢ <br>
 
 I am currently focusing on developing Restful API's with the best design patterns to develop my skills.
 
