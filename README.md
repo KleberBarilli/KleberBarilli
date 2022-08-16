@@ -1,19 +1,8 @@
 ## Hello there 🙏💯
-I am a brazilian 🇧🇷 developer who is currently studying **JavaScript** and its surroundings.
-I have some professional experiences with Java, Python🐍 (datascience and scraping) and ReactJS/AngularJS☢ <br>
-
-I am currently focusing on developing Restful API's with the best design patterns to develop my skills.
+NodeJS Developer
 
 Check my texts on https://medium.com/@kleber.barilli73 📕
 
-<br>
-
-### Languages I have studied/worked
-
-![JavaScript](https://img.shields.io/badge/-JavaScript/Typescript-black?style=flat-square&logo=javascript)
-![Python](https://img.shields.io/badge/Python-black?style=flat-square&logo=python)
-
-<br>
 
 ### Technologies I have studied/worked
 
@@ -46,21 +35,11 @@ Check my texts on https://medium.com/@kleber.barilli73 📕
   ![Snake animation](https://github.com/kleberbarilli/kleberbarilli/blob/output/github-contribution-grid-snake.svg)
 
 </div>
-
- 
-  "It is failure that guides evolution; perfection provides no incentive for improvement, and nothing is perfect." - Colson Whitehead 
-
-
-![](https://media1.giphy.com/media/5wWf7GR2nhgamhRnEuA/giphy.gif?cid=790b7611331251b552f45ad4f4e6a01398884487a0204a4a&rid=giphy.gif&ct=g)
-
 <br>
 
-  #### My Networks
-<div> 
+<div align="center"> 
     <a href="https://br.linkedin.com/in/kleber-barilli" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
   <a href = "mailto:kleber.barilli73@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.instagram.com/kleber_92/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
- 
 
 </div>
 
