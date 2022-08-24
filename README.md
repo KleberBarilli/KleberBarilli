@@ -1,6 +1,8 @@
 ## Hello there 🙏💯
 NodeJS Developer
 
+Learning Elixir 
+
 Check my texts on https://medium.com/@kleber.barilli73 📕
 
 
@@ -8,10 +10,10 @@ Check my texts on https://medium.com/@kleber.barilli73 📕
 
 ![Nodejs](https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js)
 ![Typescript](https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=typescript)
+![Elixir](https://img.shields.io/badge/-Elixir-purple?style=flat-square&logo=elixir)
 ![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
 ![Python](https://img.shields.io/badge/-Python-FFD13D?style=flat-square&logo=python)
 ![Jupyter](https://img.shields.io/badge/-Jupyter-FFF?style=flat-square&logo=jupyter)
-![Java](https://img.shields.io/badge/-Java-000?style=&logo=java)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-fff?style=flat-square&logo=postgresql)
 ![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
