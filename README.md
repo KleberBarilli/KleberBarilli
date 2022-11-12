@@ -1,7 +1,7 @@
 ## Hello there 🙏💯
 NodeJS Developer
 
-Learning Elixir 
+Learning Java 
 
 Check my texts on https://medium.com/@kleber.barilli73 📕
 
