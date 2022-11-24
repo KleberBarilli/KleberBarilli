@@ -27,11 +27,11 @@ Check my texts on https://medium.com/@kleber.barilli73 📕
  <div align="center">
 
   <a href="https://github.com/kleberbarilli">
-   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kleberbarilli&layout=compact&langs_count=7&theme=dracula"/>
-   <!--
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=kleberbarilli&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/> -->
-  
-  [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleberbarilli&theme=dracula)](https://git.io/streak-stats)
+   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kleberbarilli&layout=compact&langs_count=7&theme=gotham"/>
+
+   ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kleberbarilli&show_icons=true&theme=gotham)
+   
+   [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleberbarilli&theme=github-dark)](https://git.io/streak-stats?theme=github-dark)
  <br>
 
   ![Snake animation](https://github.com/kleberbarilli/kleberbarilli/blob/output/github-contribution-grid-snake.svg)
