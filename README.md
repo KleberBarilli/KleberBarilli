@@ -3,7 +3,9 @@ NodeJS Developer
 
 Learning Java 
 
-Check my texts on https://medium.com/@kleber.barilli73 📕
+Check my portfolio at https://kleber-barilli.vercel.app/
+
+Check my texts at https://medium.com/@kleber.barilli73 📕
 
 
 ### Technologies I have studied/worked
