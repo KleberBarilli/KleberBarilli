@@ -7,8 +7,6 @@ Check my portfolio at https://kleber-barilli.vercel.app/
 
 Check my texts at https://medium.com/@kleber.barilli73 📕
 
-
-
 ### Technologies I have studied/worked
 
 ![Nodejs](https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js)
@@ -28,6 +26,10 @@ Check my texts at https://medium.com/@kleber.barilli73 📕
 
 <br>
  <div align="center">
+
+   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kleberbarilli&layout=compact&langs_count=7&theme=gotham"/>
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kleberbarilli&show_icons=true&theme=gotham)
 
    
    [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleberbarilli&theme=github-dark)](https://git.io/streak-stats?theme=github-dark)
