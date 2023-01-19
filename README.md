@@ -30,9 +30,6 @@ Check my texts at https://medium.com/@kleber.barilli73 📕
    
    [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleberbarilli&theme=github-dark)](https://git.io/streak-stats?theme=github-dark)
  <br>
-
-  ![Snake animation](https://github.com/kleberbarilli/kleberbarilli/blob/output/github-contribution-grid-snake.svg)
-
 </div>
 <br>
 
