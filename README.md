@@ -27,8 +27,6 @@ Check my texts at https://medium.com/@kleber.barilli73 📕
 <br>
  <div align="center">
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kleberbarilli&show_icons=true&theme=gotham)
-
    
    [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleberbarilli&theme=github-dark)](https://git.io/streak-stats?theme=github-dark)
  <br>
