@@ -6,25 +6,7 @@ Check my portfolio at https://kleber-barilli.vercel.app/
 
 Check my texts at https://medium.com/@kleber.barilli73 📕
 
-### Technologies I have studied/worked
-
-![Nodejs](https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js)
-![Typescript](https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=typescript)
-![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=python)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white)
-![SpringBoot](https://img.shields.io/badge/-SpringBoot-black?style=flat-square&logo=spring-boot)
-![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-black?style=flat-square&logo=postgresql)
-![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat-square&logo=mysql)
-![MongoDB](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb)
-![Redis](https://img.shields.io/badge/-Redis-black?style=flat-square&logo=redis)
-![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
-![Docker](https://img.shields.io/badge/-Docker-black?style=flat-square&logo=docker)
-![Heroku](https://img.shields.io/badge/-Heroku-black?style=flat-square&logo=heroku)
-![Jupyter](https://img.shields.io/badge/-Jupyter-black?style=flat-square&logo=jupyter)
-
-
-
+### Skills
 
 ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -54,6 +36,7 @@ Check my texts at https://medium.com/@kleber.barilli73 📕
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+![Aws](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
 
 
 
