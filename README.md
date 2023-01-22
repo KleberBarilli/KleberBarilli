@@ -1,7 +1,6 @@
 ## Hello there 🙏💯
-NodeJS Developer
+Backend Developer
 
-Learning Java 
 
 Check my portfolio at https://kleber-barilli.vercel.app/
 
