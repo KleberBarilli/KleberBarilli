@@ -6,7 +6,7 @@ Check my portfolio at https://kleber-barilli.vercel.app/
 
 Check my texts at https://medium.com/@kleber.barilli73 📕
 
-### Skills
+### Hard Skills
 
 ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
