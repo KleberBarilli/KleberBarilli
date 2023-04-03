@@ -65,5 +65,6 @@ Check my texts at https://medium.com/@kleber.barilli73 📕
  
 [![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
 [![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
-[![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
+<p align="center">[![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)</p>
+
 [![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
