@@ -58,9 +58,10 @@ Check my texts at https://medium.com/@kleber.barilli73 📕
    [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleberbarilli&theme=github-dark)](https://git.io/streak-stats?theme=github-dark)
  <br>
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kleberbarilli&show_icons=true&theme=gotham)
+[![](https://visitcount.itsvg.in/api?id=KleberBarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
 </div>
 <br>
 
-[![](https://visitcount.itsvg.in/api?id=KleberBarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
+
  
 
