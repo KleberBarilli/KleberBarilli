@@ -52,8 +52,6 @@ Check my texts at https://medium.com/@kleber.barilli73 📕
 <br>
  <div align="center">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kleberbarilli&layout=compact&langs_count=7&theme=gotham"/>
-
-
    
    [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleberbarilli&theme=github-dark)](https://git.io/streak-stats?theme=github-dark)
  <br>
@@ -61,10 +59,3 @@ Check my texts at https://medium.com/@kleber.barilli73 📕
 </div>
 <br>
 
-
- 
-[![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
-[![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
-<p align="center">[![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)</p>
-
-[![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
