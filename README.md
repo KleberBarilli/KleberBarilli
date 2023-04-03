@@ -60,9 +60,10 @@ Check my texts at https://medium.com/@kleber.barilli73 📕
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kleberbarilli&show_icons=true&theme=gotham)
 </div>
 <br>
-<div align="center">
-   [![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
-</div>
+
 
  
-
+[![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=kleberbarilli&label=Profile%20Views&icon=1&pretty=false)](https://visitcount.itsvg.in)
