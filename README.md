@@ -1,19 +1,6 @@
 ## Hello there 🙏💯
 Backend Developer
 
-
-Check my portfolio at https://kleber-barilli.vercel.app/
-
-Check my texts at https://medium.com/@kleber.barilli73 📕
-
-<div align="left"> 
-    <a href="https://br.linkedin.com/in/kleber-barilli" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-  <a href="https://twitter.com/kleber_ts" target="_blank"><img src="https://img.shields.io/badge/-Twitter-1da0f1?style=for-the-badge&logo=twitter&logoColor=white" target="_blank"></a>
- 
-
-</div>
-
-
 ### Hard Skills
 
 ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
