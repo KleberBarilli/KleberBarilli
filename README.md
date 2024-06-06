@@ -44,7 +44,7 @@ Backend Developer
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kleberbarilli&show_icons=true&theme=gotham)
 
 <br>
-<a href="https://roadmap.sh/u/kleber" target="_blank"><img width="250" src="https://roadmap.sh/card/tall/6660d2d3b998f3b3c7d34ea1?variant=dark" alt="roadmap.sh"/></a>
+<a href="https://roadmap.sh/u/kleber"><img width="250" src="https://roadmap.sh/card/tall/6660d2d3b998f3b3c7d34ea1?variant=dark" alt="roadmap.sh"/></a>
 </div>
 <br>
 
