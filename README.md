@@ -42,6 +42,9 @@ Backend Developer
    [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleberbarilli&theme=github-dark)](https://git.io/streak-stats?theme=github-dark)
  <br>
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kleberbarilli&show_icons=true&theme=gotham)
+
+<br>
+<a href="https://roadmap.sh"><img src="https://roadmap.sh/card/tall/6660d2d3b998f3b3c7d34ea1?variant=dark" alt="roadmap.sh"/></a>
 </div>
 <br>
 
