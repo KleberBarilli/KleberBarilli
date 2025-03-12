@@ -32,7 +32,7 @@ Backend Developer
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
-![Aws](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-ff9900?style=for-the-badge&logo=amazon-web-services&logoColor=white)
 
 
 
@@ -40,6 +40,7 @@ Backend Developer
  <div align="center">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kleberbarilli&layout=compact&langs_count=7&theme=gotham"/>
    <!--   [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleberbarilli&theme=github-dark)](https://git.io/streak-stats?theme=github-dark) -->
+  
    [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=kleberbarilli&bg_color=0d1117&color=ffffff&line=00fa04&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
  <br>
