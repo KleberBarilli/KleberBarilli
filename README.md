@@ -27,6 +27,7 @@ Backend Developer
 ![Sqlite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-D9281A?style=for-the-badge&logo=redis&logoColor=white)
+![Kafka](https://img.shields.io/badge/-Kafka-fff?style=for-the-badge&logo=kafka)
 ![RabbitMQ](https://img.shields.io/badge/-RabbitMQ-ff6223?style=for-the-badge&logo=rabbit)
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -38,8 +39,7 @@ Backend Developer
 <br>
  <div align="center">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kleberbarilli&layout=compact&langs_count=7&theme=gotham"/>
-   
-   [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleberbarilli&theme=github-dark)](https://git.io/streak-stats?theme=github-dark)
+   <!--   [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleberbarilli&theme=github-dark)](https://git.io/streak-stats?theme=github-dark) -->
    [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=kleberbarilli&bg_color=0d1117&color=ffffff&line=00fa04&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
  <br>
