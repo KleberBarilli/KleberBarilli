@@ -39,9 +39,10 @@ Backend Developer
 <br>
  <div align="center">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kleberbarilli&layout=compact&langs_count=7&theme=gotham"/>
-  
- <br>
+   
+
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kleberbarilli&show_icons=true&theme=gotham)
+ <br>
+
 </div>
 <br>
-
