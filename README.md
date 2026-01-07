@@ -38,11 +38,19 @@ Backend Developer
 
 <br>
  <div align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kleberbarilli&layout=compact&langs_count=7&theme=gotham"/>
-   
-<!-- ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kleberbarilli&show_icons=true&theme=gotham)-->
 
-[![Pranesh's GitHub stats](https://github-readme-stats-fast.vercel.app/api?username=kleberbarilli)](https://github.com/kleberbarilli/github-readme-stats-fast)
+   
+
+
+<p align="center">
+  <img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=kleberbarilli&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&show=reviews,prs_merged,prs_merged_percentage" />
+ 
+  <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=kleberbarilli&layout=compact&theme=dracula&hide_progress=false" />
+</p>
+
+<p align="center">
+    <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/streak/?username=kleberbarilli&theme=dracula" />
+</p>
 
  <br>
 
