@@ -1,46 +1,46 @@
 ## Hello there 🙏💯
-Backend Developer
+Full Stack Developer 
+
+Currently expanding my skills and learning Game Development with C++ and Unreal Engine. 🎮
 
 ### Tech Stack
 
-![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+#### Frontend
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Nodejs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Nest](https://img.shields.io/badge/Nest.js-dc1c57?style=for-the-badge&logo=nest&logoColor=white)
-![Angular](https://img.shields.io/badge/Angular-c50032?style=for-the-badge&logo=angular)
-![ReactNative](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![ReactNative](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+#### Backend
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![SpringBoot](https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
-![SpringSecurity](https://img.shields.io/badge/Security&Cloud-6cb33e?style=for-the-badge&logo=spring-security&logoColor=white)
-![JPAHibernate](https://img.shields.io/badge/JPA&Hibernate-b6ad83?style=for-the-badge&logo=hibernate&logoColor=white)
-
+![Nodejs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![NestJS](https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![FastApi](https://img.shields.io/badge/FastApi-019386?style=for-the-badge&logo=fastapi&logoColor=white)
-![Jupyter](https://img.shields.io/badge/-Jupyter-000000?style=for-the-badge&logo=jupyter)
 
-
+#### Databases & Messaging
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
-![Sqlite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-D9281A?style=for-the-badge&logo=redis&logoColor=white)
 ![Kafka](https://img.shields.io/badge/-Kafka-fff?style=for-the-badge&logo=kafka)
 ![RabbitMQ](https://img.shields.io/badge/-RabbitMQ-ff6223?style=for-the-badge&logo=rabbit)
 
+#### DevOps & Cloud
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-ff9900?style=for-the-badge&logo=amazon-web-services&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 
+#### Game Development (Learning)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Unreal Engine](https://img.shields.io/badge/unrealengine-%23313131.svg?style=for-the-badge&logo=unrealengine&logoColor=white)
 
+### 🚀 Side Projects
+* **[LoggVault](https://loggvault.com)** - A web platform for saving game collections and reviews.
 
 <br>
  <div align="center">
-
-   
-
 
 <p align="center">
   <img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=kleberbarilli&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&show=reviews,prs_merged,prs_merged_percentage" />
