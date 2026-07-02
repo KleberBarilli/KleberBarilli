@@ -1,7 +1,7 @@
 ## Hello there 🙏💯
 Full Stack Developer 
 
-Currently expanding my skills and learning Game Development with C++ and Unreal Engine. 🎮
+Currently expanding my skills and learning Game Development with C++ 🎮
 
 ### Tech Stack
 
