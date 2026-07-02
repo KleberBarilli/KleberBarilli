@@ -34,10 +34,9 @@ Currently expanding my skills and learning Game Development with C++ 🎮
 
 #### Game Development (Learning)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Unreal Engine](https://img.shields.io/badge/unrealengine-%23313131.svg?style=for-the-badge&logo=unrealengine&logoColor=white)
 
 ### 🚀 Side Projects
-* **[LoggVault](https://loggvault.com)** - A web platform for saving game collections and reviews.
+* **[Revyou](https://revyouapp.com)** - A web platform for saving game/film collections and reviews.
 
 <br>
  <div align="center">
