@@ -20,11 +20,13 @@ jobs:
 
       # STATS_TOKEN is optional: a classic PAT with the "repo" scope makes
       # private contributions count. Without it the default token is used.
+      # role= also counts repos where the user is a collaborator or an
+      # organization member, not only the ones they own.
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=kleberbarilli&show_icons=true&theme=dracula&include_all_commits=true&show=reviews,prs_merged,prs_merged_percentage
+          options: username=kleberbarilli&show_icons=true&theme=dracula&include_all_commits=true&show=reviews,prs_merged,prs_merged_percentage&role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER
           path: profile/stats.svg
           token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
@@ -32,7 +34,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=kleberbarilli&layout=compact&theme=dracula
+          options: username=kleberbarilli&layout=compact&theme=dracula&role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER
           path: profile/top-langs.svg
           token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
