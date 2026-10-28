@@ -39,19 +39,18 @@ Currently expanding my skills and learning Game Development with C++ 🎮
 * **[Revyou](https://revyouapp.com)** - A web platform for saving game/film collections and reviews.
 
 <br>
- <div align="center">
+<div align="center">
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=kleberbarilli&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&show=reviews,prs_merged,prs_merged_percentage" />
- 
-  <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=kleberbarilli&layout=compact&theme=dracula&hide_progress=false" />
+  <img height="180em" src="./profile/stats.svg" alt="GitHub stats" />
+  <img height="180em" src="./profile/top-langs.svg" alt="Top languages" />
 </p>
 
 <p align="center">
-    <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/streak/?username=kleberbarilli&theme=dracula" />
+  <img height="180em" src="https://streak-stats.demolab.com/?user=kleberbarilli&theme=dracula" alt="GitHub streak" />
 </p>
 
- <br>
+<br>
 
 </div>
 <br>
