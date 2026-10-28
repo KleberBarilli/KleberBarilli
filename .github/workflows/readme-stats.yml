@@ -86,7 +86,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=kleberbarilli&layout=compact&theme=dracula&langs_count=10&role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&exclude_repo=${{ steps.repos.outputs.exclude }}
+          options: username=kleberbarilli&layout=compact&theme=dracula&langs_count=10&hide=html,css&role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&exclude_repo=${{ steps.repos.outputs.exclude }}
           path: profile/top-langs.svg
           token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
