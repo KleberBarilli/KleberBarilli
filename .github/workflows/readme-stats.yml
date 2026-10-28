@@ -20,13 +20,65 @@ jobs:
 
       # STATS_TOKEN is optional: a classic PAT with the "repo" scope makes
       # private contributions count. Without it the default token is used.
-      # role= also counts repos where the user is a collaborator or an
-      # organization member, not only the ones they own.
+      #
+      # role= makes the cards look at every repo the user can see as owner,
+      # collaborator or organization member. The cards have no "only repos I
+      # committed to" filter, so the step below builds an exclude list: it
+      # keeps the user's own repos plus the repos in ORGS where the user has
+      # at least one commit on the default branch, and excludes the rest.
+      - name: Select organization repos
+        id: repos
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          USER: kleberbarilli
+          ORGS: "idealizer" # space separated, case insensitive
+        run: |
+          set -euo pipefail
+          gh api graphql --paginate -f login="$USER" -f query='
+            query($login: String!, $endCursor: String) {
+              user(login: $login) {
+                repositories(first: 100, after: $endCursor,
+                  ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]) {
+                  pageInfo { hasNextPage endCursor }
+                  nodes { name owner { login } }
+                }
+              }
+            }' --jq '.data.user.repositories.nodes[] | "\(.owner.login)/\(.name)"' > all.txt
+
+          : > keep.txt
+          : > exclude.txt
+          while IFS=/ read -r owner name; do
+            lower_owner=$(printf '%s' "$owner" | tr '[:upper:]' '[:lower:]')
+            if [ "$lower_owner" = "$USER" ]; then
+              echo "$name" >> keep.txt
+              continue
+            fi
+            if printf ' %s ' "$(printf '%s' "$ORGS" | tr '[:upper:]' '[:lower:]')" | grep -q " $lower_owner "; then
+              n=$(gh api "repos/$owner/$name/commits?author=$USER&per_page=1" --jq 'length' 2>/dev/null || echo 0)
+              if [ "$n" -gt 0 ]; then
+                echo "$name" >> keep.txt
+                continue
+              fi
+            fi
+            echo "$name" >> exclude.txt
+          done < all.txt
+
+          sort -u keep.txt -o keep.txt
+          sort -u exclude.txt -o exclude.txt
+          # exclude_repo matches by name only, so never exclude a name we keep
+          comm -23 exclude.txt keep.txt > final.txt
+          list=$(paste -sd, - < final.txt)
+          # the list may contain private repo names: keep it out of the public log
+          if [ -n "$list" ]; then echo "::add-mask::$list"; fi
+          echo "exclude=$list" >> "$GITHUB_OUTPUT"
+          echo "repos visible: $(wc -l < all.txt), kept: $(wc -l < keep.txt), excluded: $(wc -l < final.txt)"
+          rm -f all.txt keep.txt exclude.txt final.txt
+
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=kleberbarilli&show_icons=true&theme=dracula&include_all_commits=true&show=reviews,prs_merged,prs_merged_percentage&role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER
+          options: username=kleberbarilli&show_icons=true&theme=dracula&include_all_commits=true&show=reviews,prs_merged,prs_merged_percentage&role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&exclude_repo=${{ steps.repos.outputs.exclude }}
           path: profile/stats.svg
           token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
@@ -34,7 +86,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=kleberbarilli&layout=compact&theme=dracula&role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER
+          options: username=kleberbarilli&layout=compact&theme=dracula&role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&exclude_repo=${{ steps.repos.outputs.exclude }}
           path: profile/top-langs.svg
           token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
