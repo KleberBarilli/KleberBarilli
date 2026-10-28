@@ -161,6 +161,20 @@ jobs:
       # out the organization repos an owner can see. This script gathers the
       # repos itself (own repos + ORGS repos with a commit by the user) and
       # renders the card with the same renderer.
+      # the two cards below are rendered by scripts in .github/scripts with the
+      # core package's own renderer, so they look like the stock cards
+      - name: Install card renderer
+        run: |
+          set -euo pipefail
+          CORE_DIR=$(mktemp -d)
+          printf '{"private":true,"type":"module"}' > "$CORE_DIR/package.json"
+          npm install --prefix "$CORE_DIR" --no-save --no-package-lock --ignore-scripts \
+            @stats-organization/github-readme-stats-core@2.2.1 > /dev/null
+          echo "CORE_DIR=$CORE_DIR" >> "$GITHUB_ENV"
+
+      # The stock card lists repos through the user's affiliations, which leaves
+      # out the organization repos an owner can see. This script gathers the
+      # repos itself (own repos + ORGS repos with a commit by the user).
       - name: Generate top languages card
         env:
           GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
@@ -169,21 +183,17 @@ jobs:
           LANGS_COUNT: "10"
           HIDE: html,css,bru
           OUT: profile/top-langs.svg
-        run: |
-          set -euo pipefail
-          CORE_DIR=$(mktemp -d)
-          printf '{"private":true,"type":"module"}' > "$CORE_DIR/package.json"
-          npm install --prefix "$CORE_DIR" --no-save --no-package-lock --ignore-scripts \
-            @stats-organization/github-readme-stats-core@2.2.1 > /dev/null
-          CORE_DIR="$CORE_DIR" node .github/scripts/top-langs.mjs
+        run: node .github/scripts/top-langs.mjs
 
+      # the stock pin card refuses private repositories; this one shows it on purpose
       - name: Generate Revyou card
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: pin
-          options: username=idealizer-official&repo=renoir&theme=highcontrast
-          path: profile/revyou.svg
-          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          REPO: idealizer-official/renoir
+          THEME: highcontrast
+          SHOW_OWNER: "false"
+          OUT: profile/revyou.svg
+        run: node .github/scripts/repo-card.mjs
 
       - name: Commit cards
         run: |
