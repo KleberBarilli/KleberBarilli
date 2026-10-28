@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="598" height="150" viewBox="0 0 598 150" role="img" aria-labelledby="t d">
+  <title id="t">Revyou</title>
+  <desc id="d">Save your collections and reviews of games, films, series and books</desc>
+  <style>
+    .title { font: 600 22px 'Segoe UI', Ubuntu, Sans-Serif; fill: #e7f216; }
+    .tag { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ffffff; }
+    .url { font: 600 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #00ffff; }
+    .lbl { font: 600 10px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ffffff; }
+    .ico { fill: none; stroke: #00ffff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .star { fill: #e7f216; }
+    .star.off { fill: #3a3a3a; }
+    .cover { fill: #0e0e0e; stroke: #e4e2e2; stroke-width: 1; }
+    .shine { fill: url(#g); }
+  </style>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00ffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#e7f216" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="597" height="149" rx="4.5" fill="#000" stroke="#e4e2e2"/>
+
+  <!-- same left padding and title baseline as the stats card -->
+  <text x="25" y="43" class="title">Revyou</text>
+  <text x="25" y="74" class="tag">Your games, films, series and books in one place,</text>
+  <text x="25" y="93" class="tag">with your collections and reviews.</text>
+  <text x="25" y="124" class="url">revyouapp.com →</text>
+
+  <!-- covers -->
+  <g>
+    <g transform="translate(338 38) rotate(-6 25.0 38.0)">
+      <rect class="cover" width="50" height="76" rx="5"/>
+      <rect class="shine" x="0.5" y="0.5" width="49" height="75" rx="5"/>
+      <g class="ico" transform="translate(12.0 14)"><path d="M7 4h14a6 6 0 0 1 6 6v3a6 6 0 0 1-6 6h-2l-3-3h-4l-3 3H7a6 6 0 0 1-6-6v-3a6 6 0 0 1 6-6z"/><path d="M8 9v6M5 12h6M19 10h.1M22 13h.1"/></g>
+      <text x="25.0" y="54" class="lbl" text-anchor="middle">Games</text>
+      <g transform="translate(7.5 60)"><polygon class="star" points="4,0 5.2,2.7 8,3 5.9,5 6.5,8 4,6.5 1.5,8 2.1,5 0,3 2.8,2.7"/><polygon class="star" points="13,0 14.2,2.7 17,3 14.9,5 15.5,8 13,6.5 10.5,8 11.1,5 9,3 11.8,2.7"/><polygon class="star" points="22,0 23.2,2.7 26,3 23.9,5 24.5,8 22,6.5 19.5,8 20.1,5 18,3 20.8,2.7"/><polygon class="star" points="31,0 32.2,2.7 35,3 32.9,5 33.5,8 31,6.5 28.5,8 29.1,5 27,3 29.8,2.7"/></g>
+    </g>
+    <g transform="translate(396 32) rotate(-2 25.0 38.0)">
+      <rect class="cover" width="50" height="76" rx="5"/>
+      <rect class="shine" x="0.5" y="0.5" width="49" height="75" rx="5"/>
+      <g class="ico" transform="translate(12.0 14)"><rect x="1" y="8" width="24" height="16" rx="2"/><path d="M1 8l3-6 21 3-2 3M8 2.5l4 4M14 3.5l4 4"/></g>
+      <text x="25.0" y="54" class="lbl" text-anchor="middle">Films</text>
+      <g transform="translate(7.5 60)"><polygon class="star" points="4,0 5.2,2.7 8,3 5.9,5 6.5,8 4,6.5 1.5,8 2.1,5 0,3 2.8,2.7"/><polygon class="star" points="13,0 14.2,2.7 17,3 14.9,5 15.5,8 13,6.5 10.5,8 11.1,5 9,3 11.8,2.7"/><polygon class="star" points="22,0 23.2,2.7 26,3 23.9,5 24.5,8 22,6.5 19.5,8 20.1,5 18,3 20.8,2.7"/><polygon class="star" points="31,0 32.2,2.7 35,3 32.9,5 33.5,8 31,6.5 28.5,8 29.1,5 27,3 29.8,2.7"/></g>
+    </g>
+    <g transform="translate(454 32) rotate(2 25.0 38.0)">
+      <rect class="cover" width="50" height="76" rx="5"/>
+      <rect class="shine" x="0.5" y="0.5" width="49" height="75" rx="5"/>
+      <g class="ico" transform="translate(12.0 14)"><rect x="1" y="5" width="24" height="15" rx="2"/><path d="M8 24h10M7 1l6 4 6-4"/></g>
+      <text x="25.0" y="54" class="lbl" text-anchor="middle">Series</text>
+      <g transform="translate(7.5 60)"><polygon class="star" points="4,0 5.2,2.7 8,3 5.9,5 6.5,8 4,6.5 1.5,8 2.1,5 0,3 2.8,2.7"/><polygon class="star" points="13,0 14.2,2.7 17,3 14.9,5 15.5,8 13,6.5 10.5,8 11.1,5 9,3 11.8,2.7"/><polygon class="star" points="22,0 23.2,2.7 26,3 23.9,5 24.5,8 22,6.5 19.5,8 20.1,5 18,3 20.8,2.7"/><polygon class="star off" points="31,0 32.2,2.7 35,3 32.9,5 33.5,8 31,6.5 28.5,8 29.1,5 27,3 29.8,2.7"/></g>
+    </g>
+    <g transform="translate(512 38) rotate(6 25.0 38.0)">
+      <rect class="cover" width="50" height="76" rx="5"/>
+      <rect class="shine" x="0.5" y="0.5" width="49" height="75" rx="5"/>
+      <g class="ico" transform="translate(12.0 14)"><path d="M2 2h9a4 4 0 0 1 4 4v16a3 3 0 0 0-3-3H2z"/><path d="M24 2h-9a4 4 0 0 0-4 4v16a3 3 0 0 1 3-3h10z"/></g>
+      <text x="25.0" y="54" class="lbl" text-anchor="middle">Books</text>
+      <g transform="translate(7.5 60)"><polygon class="star" points="4,0 5.2,2.7 8,3 5.9,5 6.5,8 4,6.5 1.5,8 2.1,5 0,3 2.8,2.7"/><polygon class="star" points="13,0 14.2,2.7 17,3 14.9,5 15.5,8 13,6.5 10.5,8 11.1,5 9,3 11.8,2.7"/><polygon class="star" points="22,0 23.2,2.7 26,3 23.9,5 24.5,8 22,6.5 19.5,8 20.1,5 18,3 20.8,2.7"/><polygon class="star" points="31,0 32.2,2.7 35,3 32.9,5 33.5,8 31,6.5 28.5,8 29.1,5 27,3 29.8,2.7"/></g>
+    </g>
+  </g>
+</svg>
