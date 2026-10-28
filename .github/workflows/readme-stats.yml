@@ -36,7 +36,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
           USER: kleberbarilli
-          ORGS: "idealizer" # space separated, case insensitive
+          ORGS: "idealizer-official" # space separated, case insensitive
         run: |
           set -euo pipefail
           gh api graphql --paginate -f login="$USER" -f query='
