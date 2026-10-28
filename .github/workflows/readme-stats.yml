@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 3 * * *" # daily, 03:17 UTC
   workflow_dispatch:
+    inputs:
+      debug:
+        description: Print a per-repo language breakdown (repo names masked)
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -78,6 +83,42 @@ jobs:
           echo "exclude=$list" >> "$GITHUB_OUTPUT"
           echo "repos visible: $(wc -l < all.txt), kept: $(wc -l < keep.txt), excluded: $(wc -l < final.txt)"
           rm -f all.txt keep.txt exclude.txt final.txt
+
+      - name: Debug repo breakdown
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug }}
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          USER: kleberbarilli
+        run: |
+          set -euo pipefail
+          gh api graphql --paginate -f login="$USER" -f query='
+            query($login: String!, $endCursor: String) {
+              user(login: $login) {
+                repositories(first: 100, after: $endCursor,
+                  ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]) {
+                  pageInfo { hasNextPage endCursor }
+                  nodes {
+                    name owner { login } isFork isPrivate isArchived diskUsage
+                    languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+                      totalSize edges { size node { name } }
+                    }
+                  }
+                }
+              }
+            }' --jq '.data.user.repositories.nodes[] | [.owner.login, .name, .isFork, .isPrivate, .isArchived, .diskUsage, .languages.totalSize, ([.languages.edges[] | "\(.node.name)=\(.size)"] | join(";"))] | @tsv' > repos.tsv
+          # mask every repo and org name before printing anything
+          cut -f2 repos.tsv | sort -u | while read -r n; do [ "${#n}" -ge 3 ] && echo "::add-mask::$n"; done
+          cut -f1 repos.tsv | sort -u | while read -r n; do
+            [ "$(printf '%s' "$n" | tr '[:upper:]' '[:lower:]')" != "$USER" ] && echo "::add-mask::$n"
+          done
+          i=0
+          echo "idx owner repo fork private archived diskKB langBytes commitsByUser languages"
+          while IFS=$'\t' read -r owner name fork priv arch disk total langs; do
+            i=$((i+1))
+            n=$(gh api "repos/$owner/$name/commits?author=$USER&per_page=1" --jq 'length' 2>/dev/null || echo 0)
+            echo "$i $owner $name $fork $priv $arch $disk $total $n $langs"
+          done < repos.tsv
+          rm -f repos.tsv
 
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
