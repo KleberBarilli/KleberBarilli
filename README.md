@@ -49,7 +49,7 @@ Currently expanding my skills and learning Game Development with C++ 🎮
 </p>
 
 <p align="center">
-  <img height="180em" src="https://streak-stats.demolab.com/?user=kleberbarilli&theme=highcontrast" alt="GitHub streak" />
+  <img height="180em" src="https://streak-stats.demolab.com/?user=kleberbarilli&background=000000&border=e4e2e2&stroke=e4e2e2&ring=e7f216&fire=00ffff&currStreakLabel=e7f216&sideLabels=e7f216&currStreakNum=ffffff&sideNums=ffffff&dates=ffffff" alt="GitHub streak" />
 </p>
 
 <p align="center">
