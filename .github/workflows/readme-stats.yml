@@ -12,6 +12,11 @@ on:
 permissions:
   contents: write
 
+# one run at a time, so two runs never race each other on the push
+concurrency:
+  group: readme-stats
+  cancel-in-progress: false
+
 jobs:
   update-stats:
     runs-on: ubuntu-latest
@@ -96,4 +101,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile/*.svg
           git commit -m "Update README stats cards" || exit 0
+          # main may have moved since checkout (a push while the run was going)
+          git pull --rebase origin main
           git push
