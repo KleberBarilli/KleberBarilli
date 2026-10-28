@@ -37,15 +37,14 @@ jobs:
           config_timezone: America/Sao_Paulo
           config_display: large
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-          plugin_habits_charts_type: classic
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_visibility: public # the profile is public, so never list private repos here
+          plugin_isocalendar_duration: half-year
+          # habits is off: metrics 3.34 crashes on push events that come without
+          # a commit list, which the GitHub events API now does. activity is off
+          # because almost all recent events are in private repos and listing
+          # them would expose their names on the public profile.
+          plugin_followup: yes
+          plugin_followup_sections: repositories
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
           plugin_notable: yes
