@@ -36,7 +36,7 @@ Currently expanding my skills and learning Game Development with C++ 🎮
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 ### 🚀 Side Projects
-* **[Revyou](https://revyouapp.com)** - A web platform for saving game/film collections and reviews.
+* **[Revyou](https://revyouapp.com)** - A web platform for saving game, film, series and book collections and reviews.
 
 <a href="https://revyouapp.com"><img src="./profile/revyou.svg" alt="Revyou repository" /></a>
 
@@ -54,10 +54,6 @@ Currently expanding my skills and learning Game Development with C++ 🎮
 
 <p align="center">
   <img src="./profile/snake.svg" alt="Contribution snake" />
-</p>
-
-<p align="center">
-  <img src="./profile/metrics.svg" alt="Metrics" />
 </p>
 
 <br>

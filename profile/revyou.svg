@@ -1,155 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="180" viewBox="0 0 495 180" role="img" aria-labelledby="t d">
+  <title id="t">Revyou</title>
+  <desc id="d">Save your collections and reviews of games, films, series and books</desc>
+  <style>
+    .title { font: 600 22px 'Segoe UI', Ubuntu, Sans-Serif; fill: #e7f216; }
+    .tag { font: 400 12.5px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ffffff; }
+    .url { font: 600 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #00ffff; }
+    .lbl { font: 600 10.5px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ffffff; }
+    .ico { fill: none; stroke: #00ffff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .star { fill: #e7f216; }
+    .star.off { fill: #3a3a3a; }
+    .cover { fill: #0e0e0e; stroke: #e4e2e2; stroke-width: 1; }
+    .shine { fill: url(#g); }
+  </style>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00ffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#e7f216" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
 
-      <svg
-        width="400"
-        height="120"
-        viewBox="0 0 400 120"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        role="img"
-        aria-labelledby="descId"
-      >
-        <title id="titleId"></title>
-        <desc id="descId"></desc>
-        <style>
-          .header {
-            font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #e7f216;
-            animation: fadeInAnimation 0.8s ease-in-out forwards;
-          }
-          @supports(-moz-appearance: auto) {
-            /* Selector detects Firefox */
-            .header { font-size: 15.5px; }
-          }
-          
-    .description {
-      font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif;fill: #fff;
-      
-    }
-    .gray { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #fff }
-    .badge { font: 600 11px 'Segoe UI', Ubuntu, Sans-Serif; }
-    .badge rect { opacity: 0.2; stroke: #fff }
-    .badge text { fill: #fff }
+  <rect x="0.5" y="0.5" width="494" height="179" rx="4.5" fill="#000" stroke="#e4e2e2"/>
 
-    .stat { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #fff }
-    .stagger {
-      opacity: 0;
-      animation: fadeInAnimation 0.3s ease-in-out forwards;
-    }
-    .not_bold { font-weight: 400 }
-    .bold { font-weight: 700 }
-    .icon {
-      fill: #00ffff;
-      display: block;
-    }
-  
-          
+  <!-- text block -->
+  <text x="25" y="42" class="title">Revyou</text>
+  <text x="25" y="70" class="tag">Your games, films, series and books,</text>
+  <text x="25" y="88" class="tag">all in one place, with your reviews.</text>
+  <text x="25" y="152" class="url">revyouapp.com</text>
 
-          
-      /* Animations */
-      @keyframes scaleInAnimation {
-        from {
-          transform: translate(-5px, 5px) scale(0);
-        }
-        to {
-          transform: translate(-5px, 5px) scale(1);
-        }
-      }
-      @keyframes fadeInAnimation {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-    
-          * { animation-duration: 0s !important; animation-delay: 0s !important; }
-        </style>
-
-        
-        <defs>
-          
-          
-        </defs>
-        
-
-        <rect
-          data-testid="card-bg"
-          class="card-bg"
-          x="0.5"
-          y="0.5"
-          rx="4.5"
-          height="99%"
-          stroke="#e4e2e2"
-          width="399"
-          fill="#000"
-          stroke-opacity="1"
-        />
-
-        
-      <g
-        data-testid="card-title"
-        transform="translate(25, 35)"
-      >
-        <g transform="translate(0, 0)">
-      <svg
-        class="icon"
-        x="0"
-        y="-13"
-        viewBox="0 0 16 16"
-        version="1.1"
-        width="16"
-        height="16"
-      >
-        <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
-      </svg>
-    </g><g transform="translate(25, 0)">
-      <text
-        x="0"
-        y="0"
-        class="header"
-        data-testid="header"
-      >renoir</text>
-    </g>
+  <!-- covers: four tilted cards fanned on the right -->
+  <g transform="translate(258 30)">
+    <!-- books -->
+    <g transform="translate(168 10) rotate(6)">
+      <rect class="cover" x="0" y="0" width="56" height="88" rx="5"/>
+      <rect class="shine" x="0.5" y="0.5" width="55" height="87" rx="5"/>
+      <g class="ico" transform="translate(15 22)">
+        <path d="M2 2h9a4 4 0 0 1 4 4v16a3 3 0 0 0-3-3H2z"/>
+        <path d="M24 2h-9a4 4 0 0 0-4 4v16a3 3 0 0 1 3-3h10z"/>
       </g>
-    
-
-        <g
-          data-testid="main-card-body"
-          transform="translate(0, 55)"
-        >
-          
-    
-
-    <text class="description" x="25" y="-5"> 
-      <tspan dy="1.2em" x="25">No description provided</tspan>
-    </text>
-
-    <g transform="translate(30, 45)">
-      <g transform="translate(0, 0)">
-    <g data-testid="primary-lang">
-      <circle data-testid="lang-color" cx="0" cy="-5" r="6" fill="#3178c6" />
-      <text data-testid="lang-name" class="gray" x="15">TypeScript</text>
+      <text x="28" y="62" class="lbl" text-anchor="middle">Books</text>
+      <g transform="translate(10.5 70)">
+        <polygon class="star" points="4,0 5.2,2.7 8,3 5.9,5 6.5,8 4,6.5 1.5,8 2.1,5 0,3 2.8,2.7"/>
+        <polygon class="star" points="13,0 14.2,2.7 17,3 14.9,5 15.5,8 13,6.5 10.5,8 11.1,5 9,3 11.8,2.7"/>
+        <polygon class="star" points="22,0 23.2,2.7 26,3 23.9,5 24.5,8 22,6.5 19.5,8 20.1,5 18,3 20.8,2.7"/>
+        <polygon class="star" points="31,0 32.2,2.7 35,3 32.9,5 33.5,8 31,6.5 28.5,8 29.1,5 27,3 29.8,2.7"/>
+      </g>
     </g>
-    </g><g transform="translate(80.53999967575072, 0)"><g transform="translate(0, 0)">
-      <svg
-        class="icon"
-        y="-12"
-        viewBox="0 0 16 16"
-        version="1.1"
-        width="16"
-        height="16"
-      >
-        <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path>
-      </svg>
-    </g><g transform="translate(20, 0)"><text data-testid="forkcount" class="gray">1</text></g></g>
+    <!-- series -->
+    <g transform="translate(112 4) rotate(2)">
+      <rect class="cover" x="0" y="0" width="56" height="88" rx="5"/>
+      <rect class="shine" x="0.5" y="0.5" width="55" height="87" rx="5"/>
+      <g class="ico" transform="translate(15 22)">
+        <rect x="1" y="5" width="24" height="15" rx="2"/>
+        <path d="M8 24h10M7 1l6 4 6-4"/>
+      </g>
+      <text x="28" y="62" class="lbl" text-anchor="middle">Series</text>
+      <g transform="translate(10.5 70)">
+        <polygon class="star" points="4,0 5.2,2.7 8,3 5.9,5 6.5,8 4,6.5 1.5,8 2.1,5 0,3 2.8,2.7"/>
+        <polygon class="star" points="13,0 14.2,2.7 17,3 14.9,5 15.5,8 13,6.5 10.5,8 11.1,5 9,3 11.8,2.7"/>
+        <polygon class="star" points="22,0 23.2,2.7 26,3 23.9,5 24.5,8 22,6.5 19.5,8 20.1,5 18,3 20.8,2.7"/>
+        <polygon class="star off" points="31,0 32.2,2.7 35,3 32.9,5 33.5,8 31,6.5 28.5,8 29.1,5 27,3 29.8,2.7"/>
+      </g>
     </g>
-    
-  <svg x="0" y="0"><g transform="translate(-3, 68)">
-      
-    </g></svg>
-    
-  
-        </g>
-      </svg>
-    
+    <!-- films -->
+    <g transform="translate(56 4) rotate(-2)">
+      <rect class="cover" x="0" y="0" width="56" height="88" rx="5"/>
+      <rect class="shine" x="0.5" y="0.5" width="55" height="87" rx="5"/>
+      <g class="ico" transform="translate(15 21)">
+        <rect x="1" y="8" width="24" height="16" rx="2"/>
+        <path d="M1 8l3-6 21 3-2 3M8 2.5l4 4M14 3.5l4 4"/>
+      </g>
+      <text x="28" y="62" class="lbl" text-anchor="middle">Films</text>
+      <g transform="translate(10.5 70)">
+        <polygon class="star" points="4,0 5.2,2.7 8,3 5.9,5 6.5,8 4,6.5 1.5,8 2.1,5 0,3 2.8,2.7"/>
+        <polygon class="star" points="13,0 14.2,2.7 17,3 14.9,5 15.5,8 13,6.5 10.5,8 11.1,5 9,3 11.8,2.7"/>
+        <polygon class="star" points="22,0 23.2,2.7 26,3 23.9,5 24.5,8 22,6.5 19.5,8 20.1,5 18,3 20.8,2.7"/>
+        <polygon class="star" points="31,0 32.2,2.7 35,3 32.9,5 33.5,8 31,6.5 28.5,8 29.1,5 27,3 29.8,2.7"/>
+      </g>
+    </g>
+    <!-- games -->
+    <g transform="translate(0 10) rotate(-6)">
+      <rect class="cover" x="0" y="0" width="56" height="88" rx="5"/>
+      <rect class="shine" x="0.5" y="0.5" width="55" height="87" rx="5"/>
+      <g class="ico" transform="translate(14 24)">
+        <path d="M7 4h14a6 6 0 0 1 6 6v3a6 6 0 0 1-6 6h-2l-3-3h-4l-3 3H7a6 6 0 0 1-6-6v-3a6 6 0 0 1 6-6z"/>
+        <path d="M8 9v6M5 12h6M19 10h.1M22 13h.1"/>
+      </g>
+      <text x="28" y="62" class="lbl" text-anchor="middle">Games</text>
+      <g transform="translate(10.5 70)">
+        <polygon class="star" points="4,0 5.2,2.7 8,3 5.9,5 6.5,8 4,6.5 1.5,8 2.1,5 0,3 2.8,2.7"/>
+        <polygon class="star" points="13,0 14.2,2.7 17,3 14.9,5 15.5,8 13,6.5 10.5,8 11.1,5 9,3 11.8,2.7"/>
+        <polygon class="star" points="22,0 23.2,2.7 26,3 23.9,5 24.5,8 22,6.5 19.5,8 20.1,5 18,3 20.8,2.7"/>
+        <polygon class="star" points="31,0 32.2,2.7 35,3 32.9,5 33.5,8 31,6.5 28.5,8 29.1,5 27,3 29.8,2.7"/>
+      </g>
+    </g>
+  </g>
+</svg>

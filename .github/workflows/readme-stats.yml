@@ -161,8 +161,8 @@ jobs:
       # out the organization repos an owner can see. This script gathers the
       # repos itself (own repos + ORGS repos with a commit by the user) and
       # renders the card with the same renderer.
-      # the two cards below are rendered by scripts in .github/scripts with the
-      # core package's own renderer, so they look like the stock cards
+      # the languages card is rendered by a script in .github/scripts with the
+      # core package's own renderer, so it looks like the stock card
       - name: Install card renderer
         run: |
           set -euo pipefail
@@ -185,21 +185,11 @@ jobs:
           OUT: profile/top-langs.svg
         run: node .github/scripts/top-langs.mjs
 
-      # the stock pin card refuses private repositories; this one shows it on purpose
-      - name: Generate Revyou card
-        env:
-          GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
-          REPO: idealizer-official/renoir
-          THEME: highcontrast
-          SHOW_OWNER: "false"
-          OUT: profile/revyou.svg
-        run: node .github/scripts/repo-card.mjs
-
       - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/*.svg
+          git add profile/stats.svg profile/top-langs.svg
           git commit -m "Update README stats cards" || exit 0
           # main may have moved since checkout (another workflow or a push):
           # rebase and retry a few times
