@@ -1,0 +1,52 @@
+name: Metrics
+
+on:
+  schedule:
+    - cron: "23 5 * * *" # daily, 05:23 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/metrics.yml"
+
+permissions:
+  contents: write
+
+# shares the group with the other README workflows so they never race on the push
+concurrency:
+  group: readme-stats
+  cancel-in-progress: false
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      # metrics needs a personal token (STATS_TOKEN) to read data; the
+      # default token only commits the result. It commits through the API,
+      # so no checkout is needed.
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.STATS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_branch: main
+          committer_message: "Update metrics"
+          filename: profile/metrics.svg
+          user: kleberbarilli
+          template: classic
+          base: header, activity, community, repositories, metadata
+          repositories_affiliations: owner, collaborator, organization_member
+          config_timezone: America/Sao_Paulo
+          config_display: large
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: classic
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_visibility: public # the profile is public, so never list private repos here
+          plugin_notable: yes
