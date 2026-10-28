@@ -126,9 +126,9 @@ jobs:
           for org in $ORGS; do
             echo "::add-mask::$org"
             echo "--- org repos (listed via the organization, not via user affiliation)"
-            echo "idx repo private fork archived viewerPermission permissionSources javaBytes topLanguage"
-            gh api graphql --paginate -f org="$org" -f user="$USER" -f query='
-              query($org: String!, $user: String!, $endCursor: String) {
+            echo "idx repo private fork archived viewerPermission javaBytes topLanguage"
+            gh api graphql --paginate -f org="$org" -f query='
+              query($org: String!, $endCursor: String) {
                 organization(login: $org) {
                   repositories(first: 100, after: $endCursor) {
                     pageInfo { hasNextPage endCursor }
@@ -136,17 +136,14 @@ jobs:
                       name isPrivate isFork isArchived viewerPermission
                       languages(first: 1, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name } } }
                       java: languages(first: 10, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name } } }
-                      collaborators(query: $user, first: 1) {
-                        edges { permissionSources { permission source { __typename } } }
-                      }
                     }
                   }
                 }
-              }' --jq '.data.organization.repositories.nodes[] | [.name, .isPrivate, .isFork, .isArchived, .viewerPermission, (([.collaborators.edges[]?.permissionSources[]? | "\(.source.__typename):\(.permission)"] | join(",")) // "-"), (([.java.edges[] | select(.node.name == "Java") | .size] | add) // 0), ((.languages.edges[0] | "\(.node.name)=\(.size)") // "-")] | @tsv' > org.tsv || true
+              }' --jq '.data.organization.repositories.nodes[] | [.name, .isPrivate, .isFork, .isArchived, .viewerPermission, (([.java.edges[] | select(.node.name == "Java") | .size] | add) // 0), ((.languages.edges[0] | "\(.node.name)=\(.size)") // "-")] | @tsv' > org.tsv || true
             cut -f1 org.tsv | sort -u | while read -r n; do [ "${#n}" -ge 3 ] && echo "::add-mask::$n"; done
             i=0
-            while IFS=$'\t' read -r name priv fork arch perm src java top; do
-              i=$((i+1)); echo "$i $name $priv $fork $arch $perm $src $java $top"
+            while IFS=$'\t' read -r name priv fork arch perm java top; do
+              i=$((i+1)); echo "$i $name $priv $fork $arch $perm $java $top"
             done < org.tsv
             rm -f org.tsv
           done
