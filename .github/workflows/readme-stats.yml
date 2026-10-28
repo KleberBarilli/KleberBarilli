@@ -17,6 +17,10 @@ on:
 permissions:
   contents: write
 
+env:
+  USER: kleberbarilli
+  ORGS: "idealizer-official" # organizations whose repos count when the user has commits there; space separated
+
 # one run at a time, so two runs never race each other on the push
 concurrency:
   group: readme-stats
@@ -40,8 +44,6 @@ jobs:
         id: repos
         env:
           GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
-          USER: kleberbarilli
-          ORGS: "idealizer-official" # space separated, case insensitive
         run: |
           set -euo pipefail
           gh api graphql --paginate -f login="$USER" -f query='
@@ -88,8 +90,6 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug }}
         env:
           GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
-          USER: kleberbarilli
-          ORGS: "idealizer-official"
         run: |
           set -euo pipefail
           gh api graphql --paginate -f login="$USER" -f query='
@@ -156,13 +156,25 @@ jobs:
           path: profile/stats.svg
           token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
+      # The stock card lists repos through the user's affiliations, which leaves
+      # out the organization repos an owner can see. This script gathers the
+      # repos itself (own repos + ORGS repos with a commit by the user) and
+      # renders the card with the same renderer.
       - name: Generate top languages card
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: top-langs
-          options: username=kleberbarilli&layout=compact&theme=dracula&langs_count=10&hide=html,css&role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&exclude_repo=${{ steps.repos.outputs.exclude }}
-          path: profile/top-langs.svg
-          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          THEME: dracula
+          LAYOUT: compact
+          LANGS_COUNT: "10"
+          HIDE: html,css
+          OUT: profile/top-langs.svg
+        run: |
+          set -euo pipefail
+          CORE_DIR=$(mktemp -d)
+          printf '{"private":true,"type":"module"}' > "$CORE_DIR/package.json"
+          npm install --prefix "$CORE_DIR" --no-save --no-package-lock --ignore-scripts \
+            @stats-organization/github-readme-stats-core@2.2.1 > /dev/null
+          CORE_DIR="$CORE_DIR" node .github/scripts/top-langs.mjs
 
       - name: Commit cards
         run: |
