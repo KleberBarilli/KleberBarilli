@@ -22,15 +22,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # colors follow the highcontrast theme of the other cards:
-      # cyan dots for contributions, yellow snake
+      # colors follow the other cards: yellow dots for contributions, white snake
       - name: Generate snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: kleberbarilli
           github_token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
           outputs: |
-            profile/snake.svg?color_snake=#e7f216&color_dots=#1b1b1b,#005c5c,#008c8c,#00c2c2,#00ffff
+            profile/snake.svg?color_snake=#ffffff&color_dots=#1b1b1b,#5c5300,#8f8100,#c7b300,#FFE600
 
       - name: Commit snake
         run: |

@@ -2,23 +2,23 @@
   <title id="t">Revyou</title>
   <desc id="d">Save your collections and reviews of games, films, series and books</desc>
   <style>
-    .title { font: 600 22px 'Segoe UI', Ubuntu, Sans-Serif; fill: #e7f216; }
+    .title { font: 600 22px 'Segoe UI', Ubuntu, Sans-Serif; fill: #FFE600; }
     .tag { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ffffff; }
-    .url { font: 600 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #00ffff; }
+    .url { font: 600 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #FFE600; }
     .lbl { font: 600 10px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ffffff; }
-    .ico { fill: none; stroke: #00ffff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-    .star { fill: #e7f216; }
+    .ico { fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .star { fill: #FFE600; }
     .star.off { fill: #3a3a3a; }
-    .cover { fill: #0e0e0e; stroke: #e4e2e2; stroke-width: 1; }
+    .cover { fill: #0e0e0e; stroke: #FFE600; stroke-width: 1; stroke-opacity: 0.7; }
     .shine { fill: url(#g); }
   </style>
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#00ffff" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#e7f216" stop-opacity="0.06"/>
+      <stop offset="0" stop-color="#FFE600" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.06"/>
     </linearGradient>
   </defs>
-  <rect x="0.5" y="0.5" width="597" height="149" rx="4.5" fill="#000" stroke="#e4e2e2"/>
+  <rect x="0.5" y="0.5" width="597" height="149" rx="4.5" fill="#000" stroke="#FFE600"/>
 
   <!-- same left padding and title baseline as the stats card -->
   <text x="25" y="43" class="title">Revyou</text>

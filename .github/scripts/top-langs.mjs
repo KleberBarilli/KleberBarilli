@@ -167,8 +167,15 @@ const main = async () => {
   );
 
   const renderTopLanguages = await loadRenderer(process.env.CORE_DIR);
+  // explicit colors win over the theme, like the card's own query params
+  const colors = Object.fromEntries(
+    [["title_color", "TITLE_COLOR"], ["text_color", "TEXT_COLOR"], ["bg_color", "BG_COLOR"], ["border_color", "BORDER_COLOR"]]
+      .filter(([, env]) => process.env[env])
+      .map(([key, env]) => [key, process.env[env]]),
+  );
   const svg = renderTopLanguages(langs, {
-    theme: process.env.THEME ?? "dracula",
+    theme: process.env.THEME ?? "default",
+    ...colors,
     layout: process.env.LAYOUT ?? "compact",
     langs_count: Number(process.env.LANGS_COUNT ?? 10),
     hide: (process.env.HIDE ?? "").split(",").map((s) => s.trim()).filter(Boolean),

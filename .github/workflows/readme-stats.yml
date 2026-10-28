@@ -153,7 +153,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=kleberbarilli&show_icons=true&theme=highcontrast&include_all_commits=true&show=prs_merged,prs_merged_percentage&role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&exclude_repo=${{ steps.repos.outputs.exclude }}
+          options: username=kleberbarilli&show_icons=true&bg_color=000000&title_color=FFE600&icon_color=FFE600&text_color=FFFFFF&border_color=FFE600&ring_color=FFE600&include_all_commits=true&show=prs_merged,prs_merged_percentage&role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&exclude_repo=${{ steps.repos.outputs.exclude }}
           path: profile/stats.svg
           token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
@@ -178,7 +178,10 @@ jobs:
       - name: Generate top languages card
         env:
           GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
-          THEME: highcontrast
+          BG_COLOR: "000000"
+          TITLE_COLOR: "FFE600"
+          TEXT_COLOR: FFFFFF
+          BORDER_COLOR: "FFE600"
           LAYOUT: compact
           LANGS_COUNT: "10"
           HIDE: html,css,bru
