@@ -38,7 +38,7 @@ Currently expanding my skills and learning Game Development with C++ 🎮
 ### 🚀 Side Projects
 * **[Revyou](https://revyouapp.com)** - A web platform for saving game, film, series and book collections and reviews.
 
-<a href="https://revyouapp.com"><img src="./profile/revyou.svg" alt="Revyou repository" /></a>
+<a href="https://revyouapp.com"><img src="./profile/revyou-card.svg" alt="Revyou repository" /></a>
 
 <br>
 <div align="center">
