@@ -44,7 +44,5 @@ jobs:
           # them would expose their names on the public profile.
           plugin_followup: yes
           plugin_followup_sections: repositories
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: C
+          # achievements is off too: it queries classic projects, which GitHub removed
           plugin_notable: yes
