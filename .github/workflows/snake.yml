@@ -12,9 +12,8 @@ on:
 permissions:
   contents: write
 
-# shares the group with the other README workflows so they never race on the push
 concurrency:
-  group: readme-stats
+  group: readme-snake
   cancel-in-progress: false
 
 jobs:
@@ -39,5 +38,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile/snake.svg
           git commit -m "Update contribution snake" || exit 0
-          git pull --rebase origin main
-          git push
+          # main may have moved since checkout: rebase and retry a few times
+          for attempt in 1 2 3 4; do
+            git pull --rebase origin main && git push && exit 0
+            echo "push attempt $attempt failed, retrying"; sleep 10
+          done
+          exit 1

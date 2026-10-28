@@ -21,9 +21,10 @@ env:
   USER: kleberbarilli
   ORGS: "idealizer-official" # organizations whose repos count when the user has commits there; space separated
 
-# one run at a time, so two runs never race each other on the push
+# one run of this workflow at a time; the other README workflows have their
+# own group, since a shared group only keeps one run waiting and cancels the rest
 concurrency:
-  group: readme-stats
+  group: readme-stats-cards
   cancel-in-progress: false
 
 jobs:
@@ -176,12 +177,24 @@ jobs:
             @stats-organization/github-readme-stats-core@2.2.1 > /dev/null
           CORE_DIR="$CORE_DIR" node .github/scripts/top-langs.mjs
 
+      - name: Generate Revyou card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=idealizer-official&repo=renoir&theme=highcontrast
+          path: profile/revyou.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
       - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile/*.svg
           git commit -m "Update README stats cards" || exit 0
-          # main may have moved since checkout (a push while the run was going)
-          git pull --rebase origin main
-          git push
+          # main may have moved since checkout (another workflow or a push):
+          # rebase and retry a few times
+          for attempt in 1 2 3 4; do
+            git pull --rebase origin main && git push && exit 0
+            echo "push attempt $attempt failed, retrying"; sleep 10
+          done
+          exit 1

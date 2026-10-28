@@ -12,9 +12,8 @@ on:
 permissions:
   contents: write
 
-# shares the group with the other README workflows so they never race on the push
 concurrency:
-  group: readme-stats
+  group: readme-metrics
   cancel-in-progress: false
 
 jobs:
