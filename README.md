@@ -1,6 +1,4 @@
-## Hello there 🙏💯
-
-**Full Stack Developer**
+<h1 align="center">Full Stack Developer</h1>
 
 <p align="center"><b>Let's connect</b> 👇</p>
 
@@ -11,8 +9,9 @@
   <a href="https://steamcommunity.com/id/kleber_barilli/"><img src="https://img.shields.io/badge/Steam-171A21?style=for-the-badge&logo=steam&logoColor=white" alt="Steam" /></a>
 </p>
 
-### 🚀 Side Projects
-* **[Revyou](https://revyouapp.com)** - A web platform for saving game, film, series and book collections and reviews.
+<h3 align="center">🚀 Side Projects</h3>
+
+<p align="center"><b><a href="https://revyouapp.com">Revyou</a></b> - A web platform for saving game, film, series and book collections and reviews.</p>
 
 <p align="center">
   <a href="https://revyouapp.com"><img src="./profile/revyou-banner.svg" alt="Revyou" /></a>
