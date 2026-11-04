@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Kleber&#39;s GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 10, Total Commits  : 7787, Total PRs: 2130, Total PRs Merged: 1997, Merged PRs Percentage: 93.76, Total Issues: 1618, Contributed to (last year): 24</desc>
+        <desc id="descId">Total Stars Earned: 10, Total Commits  : 7818, Total PRs: 2146, Total PRs Merged: 2012, Merged PRs Percentage: 93.76, Total Issues: 1636, Contributed to (last year): 24</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 92.23961421830397;
+        stroke-dashoffset: 92.22765091915706;
       }
     }
   
